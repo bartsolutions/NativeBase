@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, ViewPropTypes, SafeAreaView } from 'react-native';
+import { View, ViewPropTypes } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import { connectStyle } from 'native-base-shoutem-theme';
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';

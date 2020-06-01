@@ -3,7 +3,8 @@
 import { connectStyle } from 'native-base-shoutem-theme';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { View, StatusBar, ViewPropTypes, SafeAreaView } from 'react-native';
+import { View, StatusBar, ViewPropTypes } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 import getStyle from '../utils/getStyle';

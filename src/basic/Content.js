@@ -1,7 +1,7 @@
 import { connectStyle } from 'native-base-shoutem-theme';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { SafeAreaView } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 import variable from '../theme/variables/platform';
