@@ -1,6 +1,7 @@
 import { connectStyle } from 'native-base-shoutem-theme';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { View } from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
@@ -33,7 +34,7 @@ class Content extends Component {
       : variable;
 
     return (
-      <SafeAreaView style={containerStyle}>
+      <View style={containerStyle}>
         <KeyboardAwareScrollView
           automaticallyAdjustContentInsets={false}
           resetScrollToCoords={disableKBDismissScroll ? null : { x: 0, y: 0 }}
@@ -50,7 +51,7 @@ class Content extends Component {
         >
           {children}
         </KeyboardAwareScrollView>
-      </SafeAreaView>
+      </View>
     );
   }
 }

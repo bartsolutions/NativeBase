@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
-import SafeAreaView from 'react-native-safe-area-view';
 import { connectStyle } from 'native-base-shoutem-theme';
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
@@ -16,13 +15,13 @@ class Footer extends Component {
     const { style } = this.props;
 
     return (
-      <SafeAreaView
+      <View
         style={{
           backgroundColor: getStyle(style).backgroundColor
         }}
       >
         <View ref={c => (this._root = c)} {...this.props} />
-      </SafeAreaView>
+      </View>
     );
   }
 }
